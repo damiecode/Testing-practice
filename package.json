@@ -1,0 +1,26 @@
+{
+  "name": "Testing-practice",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Welcome to Testing in JavaScript 👋</h1> <br>",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damiecode/Testing-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damiecode/Testing-practice/issues"
+  },
+  "homepage": "https://github.com/damiecode/Testing-practice#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0"
+  }
+}
