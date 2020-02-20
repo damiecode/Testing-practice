@@ -1,4 +1,4 @@
-const ceaserCipher = (string, key) => {
+const caesarCipher = (string, key) => {
   const num = [];
   const sentence = [];
 
@@ -22,4 +22,4 @@ const ceaserCipher = (string, key) => {
   return sentence.join('');
 };
 
-module.exports = ceaserCipher;
+module.exports = caesarCipher;
