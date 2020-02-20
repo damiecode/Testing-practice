@@ -19,5 +19,3 @@ test('wraps around', () => {
 test('ignores punctuation', () => {
   expect(ceaserCipher('Hello!', 1)).toBe('Ifmmp!');
 });
-
-

@@ -1,8 +1,8 @@
-const ceaserCipher =  (string, key) => {
-  let num = [];
-  let sentence = [];
+const ceaserCipher = (string, key) => {
+  const num = [];
+  const sentence = [];
 
-  for (let i = 0; i < string.length; i++) {
+  for (let i = 0; i < string.length; i += 1) {
     if (string[i].match(/[a-zA-Z]/)) {
       num.push(string[i].charCodeAt(0));
     } else {
@@ -10,7 +10,7 @@ const ceaserCipher =  (string, key) => {
     }
   }
 
-  for (let i = 0; i < num.length; i++) {
+  for (let i = 0; i < num.length; i += 1) {
     if (string[i].match(/[a-zA-Z]/) && num[i] >= 65 && num[i] <= 90) {
       sentence.push(String.fromCharCode(((num[i] - 65 + key) % 26) + 65));
     } else if (string[i].match(/[a-zA-Z]/) && num[i] >= 97 && num[i] <= 122) {
@@ -20,6 +20,6 @@ const ceaserCipher =  (string, key) => {
     }
   }
   return sentence.join('');
-}
+};
 
 module.exports = ceaserCipher;
